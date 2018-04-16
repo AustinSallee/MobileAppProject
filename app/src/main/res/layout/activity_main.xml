@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.austi_000.appproject.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:scrollIndicators="top"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/calanderBtn"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:drawableLeft="@drawable/event"
+                android:paddingLeft="15dp"
+                android:text="Calanders"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/alarmBtn"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/alarm"
+                android:paddingLeft="15dp"
+                android:text="Alarms"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calanderBtn" />
+
+            <Button
+                android:id="@+id/todoBtn"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/check"
+                android:paddingLeft="15dp"
+                android:text="To-Do's"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alarmBtn" />
+
+            <Button
+                android:id="@+id/noteBtn"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/note"
+                android:paddingLeft="15dp"
+                android:text="Notes"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/todoBtn" />
+
+            <Button
+                android:id="@+id/prefBtn"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/settings"
+                android:paddingLeft="15dp"
+                android:text="Prefrences"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/todoBtn" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
